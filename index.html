@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Warrior | Aspiring Cybersecurity Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Courier New', monospace;
+            background-color: #000000;
+            color: #00ff99;
+        }
+
+        header {
+            background-color: #111;
+            padding: 50px;
+            text-align: center;
+            border-bottom: 2px solid #00ff99;
+        }
+
+        .tagline {
+            font-style: italic;
+            color: #33ffcc;
+            font-size: 1.2rem;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #33ffcc;
+            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #33ffcc; }
+        }
+
+        nav {
+            background-color: #0a0a0a;
+            text-align: center;
+            padding: 12px 0;
+            border-top: 1px solid #00ff99;
+            border-bottom: 1px solid #00ff99;
+        }
+
+        nav a {
+            color: #00ff99;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #33ffcc;
+        }
+
+        section {
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            border-bottom: 2px dashed #00ff99;
+            padding-bottom: 10px;
+        }
+
+        .project {
+            background-color: #121212;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #00ff99;
+            box-shadow: 0 0 20px rgba(0,255,153,0.3);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .project:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 40px rgba(0,255,153,0.6);
+        }
+
+        a {
+            color: #33ffcc;
+        }
+
+        footer {
+            background-color: #111;
+            color: #808080;
+            text-align: center;
+            padding: 25px;
+            border-top: 1px solid #00ff99;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="title-hack">Cyber Warrior</h1>
+        <p class="tagline">Aspiring Cybersecurity Engineer | Code. Break. Secure.</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a second-year Computer Science Engineering student passionate about cybersecurity, programming, and building real-world projects. My mission: Dominate the tech space with skills and innovation. I believe in learning by doing and creating a strong impact with technology that solves problems.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>C, Python, JavaScript</li>
+            <li>Linux, Bash, Terminal Commands</li>
+            <li>Networking & Protocols (TCP/IP, DNS, HTTP)</li>
+            <li>Cybersecurity Tools (Nmap, Wireshark, Burp Suite, Metasploit)</li>
+            <li>Version Control (Git & GitHub)</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Threat Detection System</h3>
+            <p>A Python-based system that monitors suspicious activities on your local machine and alerts the user in real time.</p>
+            <a href="#">GitHub Link</a>
+        </div>
+        <div class="project">
+            <h3>OSINT People Tracker</h3>
+            <p>A tool that scrapes open-source intelligence based on usernames and email addresses using various data sources.</p>
+            <a href="#">GitHub Link</a>
+        </div>
+        <div class="project">
+            <h3>Encrypted Chat App</h3>
+            <p>A secure peer-to-peer chat application with AES encryption and dark-themed UI using sockets in Python.</p>
+            <a href="#">GitHub Link</a>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <p><a href="#">Download Resume (Coming Soon)</a></p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: reshisahil265@gmail.com</p>
+        <p>LinkedIn: <a href="#">https://www.linkedin.com/in/reshi-sahil-bba751353</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Reshi Sahil
+        </p>
+    </footer>
+
+    <script>
+        const title = "Cyber Warrior | Aspiring Cybersecurity Engineer";
+        let index = 0;
+        function animateTitle() {
+            document.title = title.slice(0, index++);
+            if (index > title.length) index = 0;
+            setTimeout(animateTitle, 200);
+        }
+        animateTitle();
+
+        console.log("Welcome to the hacker-styled portfolio of Cyber Warrior.");
+    </script>
+</body>
+</html>
